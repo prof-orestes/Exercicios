@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub navegação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    h1 {
+     display: block;
+     background-color: azure;
+     text-align: center;
+     border-style: solid;
+     border-width: 3pt;
+     border-color: blue;
+     color: brown;
+    }
+
+    h3 {
+      display: block;
+      background-color: white;
+    }
+
+    hr {
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(63, 95, 95);
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #3f6be4e1; 
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .subnav {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .subnav .subnavbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .subnav:hover .subnavbtn {
+      background-color: rgb(255, 132, 0);
+    }
+    
+    .subnav-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      background-color: rgb(255, 132, 0);
+      width: 100%;
+      z-index: 1;
+    }
+    
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .subnav-content a:hover {
+      background-color: #eee;
+      color: black;
+    }
+    
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    button {
+      display: inline-block;
+      background-color: aquamarine;
+      border-style: solid;
+      border-color: blue;
+      border-radius: 5px;
+      
+    }
+    </style>
+
+    <body>
+    <h1>Utilizando menu de subnavegação</h1>
+    <hr>
+    <p style="display: block; border-style: solid; border-width: 2pt; border-color: blue; background-color: aquamarine; color: rgb(41, 30, 32); position: relative; text-align: center; padding: 10px; margin: auto;">Passe o mouse sobre o ítem do menu para ver submenus
+    </p>
+    <hr>
+    <div class="navbar">
+      <a href="#Início">Início</a>
+      <div class="subnav">
+        <button class="subnavbtn">Sobre <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Empresa">Empresa</a>
+          <a href="#Colaboradores">Colaboradores</a>
+          <a href="#Fornecedores">Fornecedores</a>
+        </div>
+      </div> 
+      <div class="subnav">
+        <button class="subnavbtn">Serviços <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Buscar">Buscar</a>
+          <a href="#Entregas">Entregas</a>
+          <a href="#Encomendas">Encomendas</a>
+          <a href="#Expresso">Expresso</a>
+        </div>
+      </div> 
+      <div class="subnav">
+        <button class="subnavbtn">Parceiros <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="https:/www.colegioexcelencia.com.br" target="_blank">Colégio Excelência</a>
+          <a href="https:/www.unc.br" target="_blank">UnC</a>
+          <a href="https:/www.google.com.br" target="_blank">Google</a>
+          <a href="https://forms.gle/YbTpDmpfMCaXYkxZ8" target="_blank">Ponte de macarrão</a>
+        </div>
+      </div>
+      <a href="#contato">Contato</a>
+    </div>
+    <h3>-  </h3>
+    <div style="padding:0 16px">
+      <h3>A barra de navegação acima pode ser usada para acessar links</h3>
+      <p>Também é possível acessar formulários</p>
+    </div>
+    <h1>A seguir é mostrado a utilização de um botão clicável</h1>
+    <button type="button" onclick="alert('Bem vindo!')">Click aqui!</button>
+
+    
+    <a href="https://forms.gle/jfVf6usjmPcB11dq8" target="_blank"><button>Cadastro</button></a>
+
+    </body>
+</html>
